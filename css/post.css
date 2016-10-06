@@ -1,0 +1,29 @@
+#index dl dd span.info_edit_pName {
+	background:url(../images/index_info2.png) no-repeat;
+	top:43px;
+	left:300px;
+}
+#index dl dd span.error_edit_pName {
+	top:43px;
+	left:300px;
+}
+#index dl dd span.succ_edit_pName {
+	top:49px;
+	left:300px;
+}
+#index dl dd span.info_edit_pNum {
+	background:url(../images/index_info2.png) no-repeat;
+	top:122px;
+	left:300px;
+}
+#index dl dd span.error_edit_pNum {
+    top:125px;
+	left:300px;
+  
+}
+#index dl dd span.succ_edit_pNum {
+	top:128px;
+	left:300px;   
+}
+
+

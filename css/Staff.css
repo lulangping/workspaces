@@ -1,0 +1,366 @@
+#index dl dd span.info_use {
+	background:url(../images/index_info2.png) no-repeat;
+	top:3px;
+	left:300px;
+}
+#index dl dd span.error_use {
+	top:3px;
+	left:300px;
+}
+#index dl dd span.succ_use {
+	top:9px;
+	left:300px;
+}
+
+#index dl dd span.info_idCard {
+	background:url(../images/index_info2.png) no-repeat;
+	top:123px;
+	left:300px;
+}
+#index dl dd span.error_idCard {
+    top:123px;
+	left:300px;
+  
+}
+#index dl dd span.succ_idCard {
+	top:132px;
+	left:300px;   
+}
+#index dl dd span.info_phone {
+	top:485px;
+	left:300px; 
+}
+#index dl dd span.error_phone{
+	top:485px;
+    left:300px;
+}
+#index dl dd span.succ_phone {
+	top:488px;
+	left:300px;
+}
+#index dl dd span.error_email{
+	top:525px;
+	left:300px; 
+}
+#index dl dd span.succ_email {
+	top:530px;
+	left:300px; 
+}
+#index dl dd ul.all_email {
+	width:182px;
+	height:130px;
+	background:#fff;
+	padding:5px 10px;
+	position:absolute;
+	top:530px;
+	left:250px;
+	border:1px solid #ccc;
+	display: none;
+}
+#index dl dd ul.all_email li {
+	height:25px;
+	line-height:25px;
+	border-bottom:1px solid #e5edf2;
+	padding:0 5px;
+	cursor:pointer;
+}
+#index dl dd span.info_height {
+	top:565px;
+	left:318px;
+}
+#index dl dd span.error_height{
+	top:565px;
+	left:318px;
+}
+#index dl dd span.succ_height {
+	top:572px;
+	left:318px;
+}
+#index dl dd span.error_sex {
+	top:43px;
+	left:300px; 
+} 
+#index dl dd span.error_birthDat {
+	top:83px;
+	left:430px;
+}
+#index dl dd span.error_entryUnit {
+	top:163px;
+	left:305px;
+} 
+#index dl dd span.error_entryPost {
+	top:200px;
+	left:305px;
+	display:none;
+} 
+#index dl dd span.error_entryDate {
+	top:240px;
+	left:430px;
+}
+#index dl dd span.error_employmentForm {
+	top:285px;
+	left:305px;
+} 
+#index dl dd span.error_comFrom {
+	top:322px;
+	left:305px;
+} 
+#index dl dd span.politicalLandscape {
+	top:362px;
+	left:305px; 
+} 
+#index dl dd span.error_nation {
+	top:400px;
+	left:305px;
+} 
+#index dl dd span.error_placeOfOrigin {
+	top:440px;
+	left:305px;	 
+}
+#index dl dd span.error_bloodType {
+	top:600px;
+	left:305px;	 
+}
+#index dl dd span.error_maritalStatus {
+	top:640px;
+	left:305px;
+} 
+#index dl dd span.error_highestMaster {
+	top:683px;
+	left:305px;
+}  
+#index dl dd span.error_school{
+	top:720px;
+	left:305px;
+ 
+}
+#index dl dd span.error_major{
+	top:768px;
+	left:305px;
+}
+#index dl dd span.error_graduationDate {
+	top:803px;
+	left:430px;	 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#index dl dd span.info_department {
+	height:43px;
+	line-height:18px;
+	padding-top:7px;
+	background:url(../images/index_info2.png) no-repeat;
+	top:203px;
+	left:300px;
+    display:block;
+}
+#index dl dd span.error_department{
+	top:203px;
+	left:305px;
+}
+#index dl dd span.succ_department {
+	top:213px;
+	left:305px;
+}
+#index dl dd span.info_station {
+	height:43px;
+	line-height:18px;
+	padding-top:7px;
+	background:url(../images/index_info2.png) no-repeat;
+	top:243px;
+	left:300px;
+}
+#index dl dd span.error_station{
+	top:243px;
+	left:305px;
+}
+#index dl dd span.succ_station {
+	top:253px;
+	left:305px;
+}
+
+#index dl dd span.info_birth {
+	height:43px;
+	line-height:18px;
+	padding-top:7px;
+	background:url(../images/index_info2.png) no-repeat;
+	top:763px;
+	left:300px;
+}
+#index dl dd span.error_birth{
+	top:723px;
+	left:305px;
+}
+#index dl dd span.succ_birth {
+	top:773px;
+	left:305px;
+}
+#index dl dd span.info_location {
+	height:43px;
+	line-height:18px;
+	padding-top:7px;
+	background:url(../images/index_info2.png) no-repeat;
+	top:803px;
+	left:310px;
+}
+#index dl dd span.error_location{
+	top:803px;
+	left:310px;
+}
+#index dl dd span.succ_location {
+	top:812px;
+	left:305px;
+}
+
+#index dl dd span.info_gra_date {
+	height:43px;
+	line-height:18px;
+	padding-top:7px;
+	background:url(../images/index_info2.png) no-repeat;
+	top:1003px;
+	left:310px;
+    display: block;
+
+}
+#index dl dd span.error_gra_date{
+	top:1003px;
+	left:310px;
+}
+#index dl dd span.succ_gra_date {
+	top:1012px;
+	left:305px;
+}
+
+
+#index dl dd span.info_name {
+	height:43px;
+	line-height:18px;
+	padding-top:7px;
+	background:url(../images/index_info2.png) no-repeat;
+	top:43px;
+	left:300px;
+    display: block;
+}
+#index dl dd span.error_name {
+	top:43px;
+	left:295px;
+}
+#index dl dd span.succ_name {
+	top:50px;
+	left:295px;
+}
+#index dl dd span.error_emptyN {
+	top:43px;
+	left:295px;
+}
+
+#index dl dd span.info_num {
+	background:url(../images/index_info2.png) no-repeat;
+	top:83px;
+	left:300px;
+}
+#index dl dd span.error_num {
+	top:83px;
+	left:295px;
+}
+#index dl dd span.succ_num {
+	top:90px;
+	left:295px;
+}
+#index dl dd span.error_emptyNum {
+	top:83px;
+	left:295px;
+}
+#index dl dd span.info_post_edit {
+	height:43px;
+	line-height:18px;
+	padding-top:7px;
+	background:url(../images/index_info2.png) no-repeat;
+	top:3px;
+	left:345px;
+	display:none;
+}
+#index dl dd span.error_post_edit {
+	top:3px;
+	left:345px;
+	display:none;
+}
+#index dl dd span.succ_post_edit {
+	top:12px;
+	left:205px;
+	display:none;
+}
+#index dl dd span.error_post_empty {
+	top:3px;
+	left:345px;
+	display:none;
+}
+#index dl dd span.info_edit_pName {
+	height:43px;
+	line-height:18px;
+	padding-top:7px;
+	background:url(../images/index_info2.png) no-repeat;
+	top:43px;
+	left:295px;
+    
+}
+#index dl dd span.error_edit_pName {
+	top:43px;
+	left:295px;
+   
+}
+#index dl dd span.succ_edit_pName {
+	top:52px;
+	left:295px;
+}
+#index dl dd span.error_post_emptyN {
+	top:43px;
+	left:295px;
+}
+
+
+#index dl dd span.info_edit_pNum {
+	height:43px;
+	line-height:18px;
+	padding-top:7px;
+	background:url(../images/index_info2.png) no-repeat;
+	top:83px;
+	left:295px;
+    
+}
+#index dl dd span.error_edit_pNum {
+	top:83px;
+	left:295px;
+}
+#index dl dd span.succ_edit_pNum {
+	top:92px;
+	left:295px;
+}
+#index dl dd span.error_post_emptyNum {
+	top:83px;
+	left:295px;
+}

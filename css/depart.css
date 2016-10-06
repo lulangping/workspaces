@@ -1,0 +1,39 @@
+
+#index dl dd span.info_leave_name {
+	top:5px;
+	left:320px;
+	background:url(../images/index_info2.png) no-repeat;   
+}
+#index dl dd span.error_leave_name{
+	top:7px;
+	left:320px;    
+}
+#index dl dd span.succ_leave_name {
+	top:10px;
+	left:320px;
+}
+#index dl dd span.error_leave_emptyN{
+    top:7px;
+	left:320px;     
+}
+#index dl dd span.error_leave_time{
+	top:42px;
+	left:450px; 
+}
+#index dl dd span.info_leave_rediction {
+	top:125px;
+	left:320px;
+	background:url(../images/index_info2.png) no-repeat;   
+}
+#index dl dd span.error_leave_rediction{
+	top:125px;
+	left:320px;   
+}
+#index dl dd span.succ_leave_rediction {
+	top:128px;
+	left:320px;
+}
+#index dl dd span.error_leave_emptyR{
+    top:125px;
+	left:320px;  
+}

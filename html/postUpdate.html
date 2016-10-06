@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>岗位更新</title>
+<script type="text/javascript" src="../tool.js"></script>
+<script type="text/javascript" src="../base.js"></script>
+<script type="text/javascript" src="../base_drag.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/post.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/index.css" />
+<link rel="stylesheet" type="text/css" href="../css/post.css" />
+</head>
+<body>
+
+<div id="header">
+	<div class="logo"></div>
+	<div class="member">个人中心
+		<ul class="member_ul">
+			<li><a href="###">设置</a></li>
+			<li><a href="###">帮助</a></li>
+			<li><a href="###">退出</a></li>
+		</ul>
+	</div>
+	<div class="login">登录</div>
+</div>
+
+<div id="login">
+	<h2><img src="../images/close.png" alt="" class="close" />网站登录</h2>
+	<div class="user">帐 号：<input type="text" name="user" class="text" /></div>
+	<div class="pass">密 码：<input type="password" name="pass" class="text" /></div>
+	<div class="button"><input type="button" class="submit" value="" /></div>
+	<div class="other">注册新用户 | 忘记密码？</div>
+</div>
+<div id="banner">
+	<img src="../images/banner1.jpg" alt="第一张" />
+	<img src="../images/banner2.jpg" alt="第二张" />
+	<img src="../images/banner3.jpg" alt="第三张" />
+  <img src="../images/banner4.jpg" alt="第四张" />
+	<ul>
+		<li>●</li>
+		<li>●</li>
+		<li>●</li>
+        <li>●</li>
+	</ul>
+	<span></span>
+</div>
+
+
+<div id="main">
+    <div id="nav">
+		 <h2>员工信息</h2>
+                         <ul>
+                               <li><a href="staffUpdate.html">更新信息</a></li>
+                         </ul>
+		 <h2>部门管理</h2>
+                         <ul>
+                              <li><a href="unitAdd.html">新建部门</a></li>
+                              <li><a href="unitUpdate.html">更新部门</a></li>
+                              <li><a href="unitStaffs.html">部门员工信息</a></li>
+                         </ul>
+		  <h2>岗位管理</h2>
+                         <ul>
+		              <li><a href="postAdd.html">新建岗位</a></li>
+			      <li><a href="postUpdate.html">更新岗位</a></li>
+			      <li><a href="postStaffs.html">岗位员工信息</a></li>
+		         </ul>
+		  <h2>入职管理</h2>
+                         <ul>
+		              <li><a href="insertStaff.html">基本信息录入</a></li>
+			      <li><a>试用期录入</a></li>
+		         </ul>
+                  <h2>离职管理</h2>
+                         <ul>
+		              <li><a href="departStaffList.html">员工列表查询</a></li>
+			      <li><a href="departStaffSelect.html">离职员工信息查询</a></li>
+			      <li><a href="depart.html">离职办理</a></li>
+		         </ul>
+		  <h2>报表管理</h2>
+                         <ul>
+	                      <li><a href="reportStaff.html">新聘员工报表</a></li>
+			      <li><a href="reportDepart.html">离职员工报表</a></li>
+		         </ul>  
+    </div>
+	<div id="index">
+		<h2>岗位更新</h2>
+     <dl>
+        <dd>
+          部门编号: <input type="text" name="post_id" class="text" />            
+        <input type="button" value="搜索" class="search" name="submit" />
+        </dd> 
+      </dl>
+      <br/>
+    <form id="postUpdate" name="postUpdate">
+    <dl>
+      <dd>
+          选择部门：
+          <select name="name_department">
+            <option value="1">-人事部-</option>
+            <option value="2">-财务部-</option>
+            <option value="3">-开发部-</option>
+            <option value="4">-运营部-</option>
+          </select>
+      </dd>
+      <dd>
+        岗位名称：
+        <input type="text" name="name_post" class="text"></input>
+        <span class="info info_edit_pName">请输入岗位名称，1~5位，由文字组成！</span>
+        <span class="error error_edit_pName">输入不合法，请重新输入！</span>
+        <span class="succ succ_edit_pName">可用</span>
+     </dd>
+     <dd>
+        岗位类型：
+        <select name="type_post">
+          <option value="1">管理</option>
+          <option value="2">技术</option>
+          <option value="3">营销</option>
+          <option value="4">市场</option>
+        </select>
+     </dd>
+     <dd>
+        岗位编制：
+        <input type="text" name="num_post" class="text"></input>
+        <span class="info info_edit_pNum">请输入岗位编制，1~5位，由数字组成！</span>
+        <span class="error error_edit_pNum">输入不合法，请重新输入！</span>
+        <span class="succ succ_edit_pNum">可用</span>
+     </dd>
+     <dd style="height:126px;"><span style="vertical-align:85px">
+        描&nbsp;&nbsp;述 :   
+        </span> <textarea name="ps"></textarea>
+     </dd> 
+      <dd style="display:block;" class="ps">还可以输入<strong class="num">200</strong>字</dd> 
+      <dd style="display:none;" class="ps">已超过<strong class="num"></strong>字，<span class="clear">清尾</span></dd>
+     <dd style="padding:0 0 20px 80px;">
+        <input type="button" name="sub" class="submit" value="确认更新" />
+     </dd>
+    </dl>
+    </form>
+	</div>
+</div>
+
+<div id="screen"></div>
+
+<div id="test" style="clear:both;"></div>
+<div id="footer">
+    <a href="" target="_blank">相关内容</a>|                      
+        <span>联系方式 1412822051</span>           
+         <p>Copyright &copy; Lulangping</p>
+</div>
+
+</body>
+</html>

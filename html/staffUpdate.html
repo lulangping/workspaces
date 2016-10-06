@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>个人信息更新</title>
+<script type="text/javascript" src="../jQuery/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="../tool.js"></script>
+<script type="text/javascript" src="../base.js"></script>
+<script type="text/javascript" src="../base_drag.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/staff.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/index.css" />
+<link rel="stylesheet" type="text/css" href="../css/staff.css" />
+</head>
+<body>
+
+<div id="header">
+	<div class="logo"></div>
+	<div class="member">个人中心
+		<ul class="member_ul">
+			<li><a href="###">设置</a></li>
+			<li><a href="###">帮助</a></li>
+			<li><a href="###">退出</a></li>
+		</ul>
+	</div>
+	<div class="login">登录</div>
+</div>
+
+<div id="login">
+	<h2><img src="../images/close.png" alt="" class="close" />网站登录</h2>
+	<div class="user">帐 号：<input type="text" name="user" class="text" /></div>
+	<div class="pass">密 码：<input type="password" name="pass" class="text" /></div>
+	<div class="button"><input type="button" class="submit" value="" /></div>
+	<div class="other">注册新用户 | 忘记密码？</div>
+</div>
+<div id="banner">
+	<img src="../images/banner1.jpg" alt="第一张" />
+	<img src="../images/banner2.jpg" alt="第二张" />
+	<img src="../images/banner3.jpg" alt="第三张" />
+    <img src="../images/banner4.jpg" alt="第四张" />
+	<ul>
+		<li>●</li>
+		<li>●</li>
+		<li>●</li>
+        <li>●</li>
+	</ul>
+	<span></span>
+</div>
+
+<div id="main">
+    <div id="nav">
+		 <h2>员工信息</h2>
+                         <ul>
+                               <li><a href="staffUpdate.html">更新个人信息</a></li>
+                         </ul>
+		 <h2>部门管理</h2>
+                         <ul>
+                              <li><a href="unitAdd.html">新建部门</a></li>
+                              <li><a href="unitUpdate.html">更新部门</a></li>
+                              <li><a href="unitStaffs.html">部门员工信息</a></li>
+                         </ul>
+		  <h2>岗位管理</h2>
+                         <ul>
+		              <li><a href="postAdd.html">新建岗位</a></li>
+			      <li><a href="postUpdate.html">更新岗位</a></li>
+			      <li><a href="postStaffs.html">岗位员工信息</a></li>
+		         </ul>
+		  <h2>入职管理</h2>
+                         <ul>
+		              <li><a href="insertStaff.html">基本信息录入</a></li>
+			      <li><a>试用期录入</a></li>
+		         </ul>
+                  <h2>离职管理</h2>
+                         <ul>
+		              <li><a href="departStaffList.html">员工列表查询</a></li>
+			      <li><a href="departStaffSelect.html">离职员工信息查询</a></li>
+			      <li><a href="depart.html">离职办理</a></li>
+		         </ul>
+		  <h2>报表管理</h2>
+                         <ul>
+	                      <li><a href="reportStaff.html">新聘员工报表</a></li>
+			      <li><a href="reportDepart.html">离职员工报表</a></li>
+		         </ul>  
+    </div>
+	<div id="index">
+	        <h2>更新个人基本信息</h2>
+	        <form name="staffUpdate" id="staffUpdate">
+		        <dl>
+			        <dd>姓　　名  ： <input type="text" name="name" class="text" value="张三"/>
+					<span class="info info_use">请输入姓名，2~20位，由字母、数字和下划线组成！</span>
+			        <span class="error error_use">输入不合法，请重新输入！</span>
+			        <span class="succ succ_use">可用</span>
+			        </dd> 
+			        <dd class="sex">
+			        	<span style="vertical-align:-2px">性　　别 ：</span>
+			        	<select name="sex">
+			        		<option value="0">请选择</option>
+							<option value="1">男</option>
+						    <option value="2" selected="selected">女</option>
+						</select>  
+					    <span class="error error_sex">请选择！</span>
+			        </dd>
+		            <dd class="date">
+		            	<span style="vertical-align:-2px">生　　日 ：</span> 
+		            	<select name="bir_year">
+						    <option value="0">- 年 -</option>
+						</select> -
+						<select name="bir_month">
+							<option value="0">- 月 -</option>
+						</select> -
+						<select name="bir_day">
+							<option value="0">- 日 -</option>
+						</select>  
+						<input name="birthDate" style="display:none" >
+				        <span class="error error_birthDat">请选择！</span>
+			        </dd>
+			        <dd>身份证号 ： <input type="text" name="idNumber" class="text" value="452903199503024568"/>
+				        <span class="info info_idCard">身份证号由18位组成，包含数字和字母！</span>
+			            <span class="error error_idCard">输入不合法，请重新输入！</span>
+			            <span class="succ succ_idCard">可用</span>
+		        	</dd>
+			        <dd>部　　门  ：
+			        	<select name="name_department" id="user_department">
+			        		<option value="0">-请选择-</option>
+			        		<option value="1">-人事部-</option>
+			        		<option value="2">-财务部-</option>
+			        		<option value="3" selected="selected">-开发部-</option>
+			        		<option value="4">-运营部-</option>
+			            </select>
+                        <span class="error error_entryUnit">请选择！</span>
+    		        </dd>
+			        <dd>岗　　位  ： 
+			         	<select name="name_post" id="user_post">
+					        <option value="0">-请选择-</option>
+					        <option value="1">-总经理-</option>
+			        		<option value="2">-总监-</option>
+			        		<option value="3" selected="selected">-助理-</option>
+			        		<option value="4">-干事-</option>
+				        </select>
+                        <span class="error error_entryPost">请选择！</span>
+			        </dd>
+			        <dd class="date">
+			         	<span style="vertical-align:-2px">入职时间  ：</span>
+			         	<select name="en_year">
+							<option value="0">- 年 -</option>
+					    </select> -
+						<select name="en_month">
+							<option value="0">- 月 -</option>
+						</select> -
+						<select name="en_day">
+							<option value="0">- 日 -</option>
+						</select> 
+							<input name="entryDate" style="display:none" >
+						    <span class="error error_entryDate">请选择！</span>
+		          	</dd>
+			        <dd><span style="vertical-align:-2px">用工形式 ：</span> 
+			        	<select name="employmentForm">
+			        		<option value="0">- - 请选择 - -</option>
+							<option value="1">正式员工</option>
+							<option value="2" selected="selected">临时员工</option>
+						</select> 
+						<span class="error error_employmentForm">请选择！</span>
+			        </dd>
+			        <dd><span style="vertical-align:-2px">人员来源 ：</span> 
+			        	<select name="comFrom">
+						    <option value="0">- - 请选择 - -</option>
+							<option value="1">校园招聘</option>
+							<option value="2" selected="selected">社会招聘</option>
+							<option value="3">其他</option>
+						</select>  
+						<span class="error error_comFrom">请选择！</span>
+			        </dd>
+			        <dd><span style="vertical-align:-2px">政治面貌 ：</span> 
+			        	<select name="politicalLandscape">
+							<option value="0">- - 请选择 - -</option>
+							<option value="1">党员</option>
+							<option value="2">预备党员</option>
+							<option value="3" selected="selected">团员</option>
+							<option value="4">其他</option>
+					    </select>  
+						<span class="error politicalLandscape">请选择！</span>
+			        </dd>
+			        <dd><span style="vertical-align:-2px">民　　族 ：</span> 
+			        	<select name="nation">
+			 				<option value="0">- - 请选择 - -</option>
+							<option value="1">汉族</option>
+							<option value="2">满族</option>
+							<option value="3" selected="selected">壮族</option>
+							<option value="4">其他</option>
+						</select>  
+						<span class="error error_nation">请选择！</span>
+			        </dd>
+			        <dd class="date"> <span style="vertical-align:-2px">籍　　贯 ：</span> 
+			        	<select name="pro" id="user_sheng"  onChange="selectcityarea('pro','city','staffUpdate');">
+							<option value="0">- 省 -</option>
+						</select> -
+						<select name="city">
+							<option value="0">- 市 -</option>
+						</select>
+						<input name="placeOfOrigin" style="display:none">
+						<span class="error error_placeOfOrigin">请选择！</span>
+
+			        </dd>
+			
+			        <dd>联系电话 ： <input type="text" name="phone" class="text" value="13712345689"/>
+				        <span class="info info_phone">请输入正确的电话号码！</span>
+			            <span class="error error_phone">输入不合法，请重新输入！</span>
+			            <span class="succ succ_phone">可用</span>
+			        </dd>
+
+		            <dd>电子邮件 ： <input type="text" name="email" class="text" autocomplete="off" value="665147824@qq.com" />
+					    <span class="error error_email">邮件不合法，请重新输入！</span>
+					    <span class="succ succ_email">可用</span>
+					    <ul class="all_email">
+						    <li><span></span>@qq.com</li>				
+						    <li><span></span>@163.com</li>
+						    <li><span></span>@sohu.com</li>
+						    <li><span></span>@sina.com.cn</li>
+						    <li><span></span>@gmail.com</li>
+					    </ul>
+				    </dd>
+			        <dd>身　　高 ： <input type="text" name="height" class="text" value="165" />cm
+				        <span class="info info_height">请输入数字</span>
+			            <span class="error error_height">输入不合法，请重新输入！</span>
+			            <span class="succ succ_height">可用</span>
+			        </dd>
+			        <dd><span style="vertical-align:-2px">血　　型 ：</span> 
+			        	<select name="bloodType">
+							<option value="0">- - 请选择 - -</option>
+							<option value="1" selected="selected">A 型</option>
+							<option value="2">B 型</option>
+							<option value="3">AB 型</option>
+							<option value="4">0 型</option>
+							<option value="5">其他</option>
+						</select>  
+						<span class="error error_bloodType">请选择！</span>
+			        </dd>
+			        <dd><span style="vertical-align:-2px">婚姻状况 ：</span> 
+			        	<select name="maritalStatus">
+							<option value="0">- - 请选择 - -</option>
+							<option value="1" selected="selected">未婚</option>
+							<option value="2">已婚</option>
+							<option value="3">丧偶</option>
+							<option value="4">离婚</option>
+							<option value="5">其他</option>
+						</select>  
+						<span class="error error_maritalStatus">请选择！</span>
+			        </dd>
+
+			        <dd><span style="vertical-align:-2px">最高学位 ：</span> 
+			        	<select name="highestMaster">
+							<option value="0">- - 请选择 - -</option>
+							<option value="1">无学位</option>
+							<option value="2" selected="selected">学士</option>
+							<option value="3">双学士</option>
+							<option value="4">硕士</option>
+							<option value="5">博士</option>
+							<option value="6">博士后</option>
+						</select>  
+						<span class="error error_highestMaster">请选择！</span>
+			        </dd>
+
+			        <dd>毕业院校 ： <input type="text" name="gradutedUniversity" class="text"  maxlength="20" value="清华大学"/>
+			            <span class="error error_school">不能为空！</span>
+			        </dd>
+			        <dd>所学专业 ： <input type="text" name="majorInScience" class="text"  maxlength="20" value="软件工程"/>
+						<span class="error error_major">不能为空！</span>
+			   
+			        </dd>
+			        <dd class="date"><span style="vertical-align:-2px">毕业日期 ：</span> 
+			        	<select name="gra_year">
+							<option value="0">- 年 -</option>
+						</select> -
+						<select name="gra_month">
+							<option value="0">- 月 -</option>
+						</select> -
+						<select name="gra_day">
+							<option value="0">- 日 -</option>
+						</select>  
+						<input name="graduationDate" style="display:none" >
+						<span class="error error_graduationDate">请选择！</span>
+			        </dd>
+			        <dd style="padding:10px 0 20px 80px;"><input type="button" name="sub" class="submit" value="确认更新" />
+			        </dd>
+		        </dl>
+	        </form>
+	</div>
+</div>
+<div id="screen"></div>
+
+<div id="test" style="clear:both;"></div>
+<div id="footer">
+    <a href="" target="_blank">相关内容</a>|                      
+        <span>联系方式 1412822051</span>           
+         <p>Copyright &copy; Lulangping</p>
+</div>
+
+</body>
+</html>

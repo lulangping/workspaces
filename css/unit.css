@@ -1,0 +1,58 @@
+#index dl dd span.info_unitname {
+	background:url(../images/index_info2.png) no-repeat;
+	top:3px;
+	left:300px;
+}
+#index dl dd span.error_unitname {
+	top:3px;
+	left:300px;
+}
+#index dl dd span.succ_unitname {
+	top:9px;
+	left:300px;
+}
+#index dl dd span.info_unitTelnum {
+	background:url(../images/index_info2.png) no-repeat;
+	top:85px;
+	left:300px;
+}
+#index dl dd span.error_unitTelnum {
+    top:85px;
+	left:300px;
+  
+}
+#index dl dd span.succ_unitTelnum {
+	top:88px;
+	left:300px;   
+}
+#index dl dd span.info_unitfax {
+	background:url(../images/index_info2.png) no-repeat;
+	top:125px;
+	left:300px; 
+}
+#index dl dd span.error_unitfax{
+	top:125px;
+    left:300px;
+}
+#index dl dd span.succ_unitfax {
+	top:128px;
+	left:300px;
+}
+#index dl dd span.info_unitsuper {
+	background:url(../images/index_info2.png) no-repeat;
+	top:165px;
+	left:300px; 
+}
+#index dl dd span.error_unitsuper{
+	top:165px;
+    left:300px;
+}
+#index dl dd span.succ_unitsuper {
+	top:168px;
+	left:300px;
+}
+#index dl dd span.error_datetime {
+	top:202px;
+	left:420px;
+}
+

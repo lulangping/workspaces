@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新聘员工报表</title>
+<script type="text/javascript" src="../tool.js"></script>
+<script type="text/javascript" src="../base.js"></script>
+<script type="text/javascript" src="../base_drag.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/index.css" />
+</head>
+<body>
+
+<div id="header">
+	<div class="logo"></div>
+	<div class="member">个人中心
+		<ul class="member_ul">
+			<li><a href="###">设置</a></li>
+			<li><a href="###">帮助</a></li>
+			<li><a href="###">退出</a></li>
+		</ul>
+	</div>
+	<div class="login">登录</div>
+</div>
+
+<div id="login">
+	<h2><img src="../images/close.png" alt="" class="close" />网站登录</h2>
+	<div class="user">帐 号：<input type="text" name="user" class="text" /></div>
+	<div class="pass">密 码：<input type="password" name="pass" class="text" /></div>
+	<div class="button"><input type="button" class="submit" value="" /></div>
+	<div class="other">注册新用户 | 忘记密码？</div>
+</div>
+<div id="banner">
+	<img src="../images/banner1.jpg" alt="第一张" />
+	<img src="../images/banner2.jpg" alt="第二张" />
+	<img src="../images/banner3.jpg" alt="第三张" />
+    <img src="../images/banner4.jpg" alt="第四张" />
+	<ul>
+		<li>●</li>
+		<li>●</li>
+		<li>●</li>
+        <li>●</li>
+	</ul>
+	<span></span>
+</div>
+
+
+<div id="main">
+    <div id="nav">
+		 <h2>员工信息</h2>
+                    <ul>
+                      <li><a href="staffUpdate.html">更新信息</a></li>
+                    </ul>
+		 <h2>部门管理</h2>
+                  <ul>
+                    <li><a href="unitAdd.html">新建部门</a></li>
+                    <li><a href="unitUpdate.html">更新部门</a></li>
+                    <li><a href="unitStaffs.html">部门员工信息</a></li>
+                  </ul>
+		  <h2>岗位管理</h2>
+                 <ul>
+		          <li><a href="postAdd.html">新建岗位</a></li>
+			      <li><a href="postUpdate.html">更新岗位</a></li>
+			      <li><a href="postStaffs.html">岗位员工信息</a></li>
+		         </ul>
+		  <h2>入职管理</h2>
+                  <ul>
+		           <li><a href="insertStaff.html">基本信息录入</a></li>
+			       <li><a>试用期录入</a></li>
+		         </ul>
+                  <h2>离职管理</h2>
+                    <ul>
+		              <li><a href="departStaffList.html">员工列表查询</a></li>
+			          <li><a href="departStaffSelect.html">离职员工信息查询</a></li>
+			          <li><a href="depart.html">离职办理</a></li>
+		           </ul>
+		  <h2>报表管理</h2>
+                   <ul>
+	                 <li><a href="reportStaff.html">新聘员工报表</a></li>
+			         <li><a href="reportDepart.html">离职员工报表</a></li>
+		         </ul>  
+    </div>
+	<div id="index">
+		<h2>新聘员工报表</h2>
+		<form id="formReport">
+			<dl style="margin-left:7%;">
+			<span style="vertical-align:-2px;">开始时间：</span> 
+			<input type="text" name="startTime"></input>
+            <span style="vertical-align:-2px;">结束时间：</span> 
+            <input type="text" name="endTime"></input>
+           选择部门：
+           <select name="name_department" class="sel" style="width:150px">
+                <option value="1">-人事部-</option>
+                <option value="2">-财务部-</option>
+                <option value="3">-开发部-</option>
+                <option value="4">-运营部-</option>
+            </select>
+            <input type="button" value="显示报表" class="submit_b" name="submit"/ >
+            </dl>
+        </form>
+        <br/>
+        <table id="table3" border="1" bordercolor="#fff" cellspacing="0" cellpadding="0" width="100%" >
+        <caption></caption>
+        <thead>  
+        	<tr>
+        		<th>序号</th>
+                <th>部门名称</th>
+                <th>岗位名称</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>入职日期</th>
+                <th>学历</th>
+            </tr>
+        </thead>    
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Text 1B</td>
+                <td>Text 1C</td>
+                <td>Text 1B</td>
+                <td>Text 1B</td>
+                <td>Text 1B</td>
+                <td>Text 1B</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Text 2B</td>
+                <td>Text 2C</td>
+                <td>Text 1B</td>
+                <td>Text 1B</td>
+                <td>Text 1B</td>
+                <td>Text 1B</td>
+            </tr>
+        </tbody>
+        </table>
+
+</div>
+
+
+<div id="screen"></div>
+
+<div id="test" style="clear:both;"></div>
+<div id="footer">
+    <a href="" target="_blank">相关内容</a>|                      
+        <span>联系方式 1412822051</span>           
+         <p>Copyright &copy; Lulangping</p>
+</div>
+
+</body>
+</html>

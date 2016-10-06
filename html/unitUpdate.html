@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>部门更新</title>
+<script type="text/javascript" src="../tool.js"></script>
+<script type="text/javascript" src="../base.js"></script>
+<script type="text/javascript" src="../base_drag.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/unit.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/index.css" />
+<link rel="stylesheet" type="text/css" href="../css/unit.css" />
+</head>
+<body>
+
+<div id="header">
+	<div class="logo"></div>
+	<div class="member">个人中心
+		<ul class="member_ul">
+			<li><a href="###">设置</a></li>
+			<li><a href="###">帮助</a></li>
+			<li><a href="###">退出</a></li>
+		</ul>
+	</div>
+	<div class="login">登录</div>
+</div>
+
+<div id="login">
+	<h2><img src="../images/close.png" alt="" class="close" />网站登录</h2>
+	<div class="user">帐 号：<input type="text" name="user" class="text" /></div>
+	<div class="pass">密 码：<input type="password" name="pass" class="text" /></div>
+	<div class="button"><input type="button" class="submit" value="" /></div>
+	<div class="other">注册新用户 | 忘记密码？</div>
+</div>
+<div id="banner">
+	<img src="../images/banner1.jpg" alt="第一张" />
+	<img src="../images/banner2.jpg" alt="第二张" />
+	<img src="../images/banner3.jpg" alt="第三张" />
+  <img src="../images/banner4.jpg" alt="第四张" />
+	<ul>
+		<li>●</li>
+		<li>●</li>
+		<li>●</li>
+        <li>●</li>
+	</ul>
+	<span></span>
+</div>
+
+
+<div id="main">
+    <div id="nav">
+		 <h2>员工信息</h2>
+                         <ul>
+                               <li><a href="staffUpdate.html">更新信息</a></li>
+                         </ul>
+		 <h2>部门管理</h2>
+                         <ul>
+                              <li><a href="unitAdd.html">新建部门</a></li>
+                              <li><a href="unitUpdate.html">更新部门</a></li>
+                              <li><a href="unitStaffs.html">部门员工信息</a></li>
+                         </ul>
+		  <h2>岗位管理</h2>
+                         <ul>
+		              <li><a href="postAdd.html">新建岗位</a></li>
+			      <li><a href="postUpdate.html">更新岗位</a></li>
+			      <li><a href="postStaffs.html">岗位员工信息</a></li>
+		         </ul>
+		  <h2>入职管理</h2>
+                         <ul>
+		              <li><a href="insertStaff.html">基本信息录入</a></li>
+			      <li><a>试用期录入</a></li>
+		         </ul>
+                  <h2>离职管理</h2>
+                         <ul>
+		              <li><a href="departStaffList.html">员工列表查询</a></li>
+			      <li><a href="departStaffSelect.html">离职员工信息查询</a></li>
+			      <li><a href="depart.html">离职办理</a></li>
+		         </ul>
+		  <h2>报表管理</h2>
+                         <ul>
+	                      <li><a href="reportStaff.html">新聘员工报表</a></li>
+			      <li><a href="reportDepart.html">离职员工报表</a></li>
+		         </ul>  
+    </div>
+	<div id="index">
+		<h2>部门修改</h2>
+    <form>
+      <dl>
+        <dd>
+          岗位编号: <input type="text" name="post_id" class="text" />            
+        <input type="button" value="搜索" class="search" name="submit" />
+        </dd> 
+      </dl>
+      </form>
+      <br/>
+    <form name="unitUpdate" id="unitUpdate">
+    <dl>
+      <dd>
+        名&nbsp;&nbsp;称:   
+        <input type="text" name="unit_name" class="text"></input>
+        <span class="info info_unitname">请输入部门名称，不能为空！</span>
+        <span class="error error_unitname">输入不合法，请重新输入！</span>
+        <span class="succ succ_unitname">可用</span>
+      </dd>
+      <dd>
+        类&nbsp;&nbsp;型:   
+        <select class="formSelect" name="unit_type">  
+          <option value ="1">- 公司 - </option>  
+          <option value ="2">- 部门 -</option>   
+        </select>
+      </dd>
+      <dd>
+        电&nbsp;&nbsp;话:   
+        <input type="text" name="unit_telenum" class="text"></input>
+        <span class="info info_unitTelnum">请输入电话，区号(0开头3到4位)-电话号码(7到8位)！</span>
+        <span class="error error_unitTelnum">输入不合法，请重新输入！</span>
+        <span class="succ succ_unitTelnum">可用</span>
+      </dd>
+      <dd>
+        传&nbsp;&nbsp;真:   
+        <input type="text" name="unit_fax" class="text"></input>
+        <span class="info info_unitfax">部门传真号码，区号(0开头3到4位)-电话号码(7到8位)！</span>
+        <span class="error error_unitfax">输入不合法，请重新输入！</span>
+        <span class="succ succ_unitfax">可用</span>
+      </dd>
+      <dd>
+        上级部门:   
+        <input type="text" name="unit_super" class="text"></input>
+        <span class="info info_unitsuper">请输入部门上级部门编号(2位)，由数字组成！</span>
+        <span class="error error_unitsuper">输入不合法，请重新输入！</span>
+        <span class="succ succ_unitsuper">可用</span>
+      </dd>
+      <dd class="date">
+        成立日期:   
+        <select name="year" >
+          <option value="0">- 年 -</option>
+        </select> -
+        <select name="month" >
+          <option value="0">- 月 -</option>
+        </select> -
+        <select name="day">
+          <option value="0">- 日 -</option>
+        </select>
+        <span class="error error_datetime">尚未全部选择，请选择！</span>
+      </dd>
+      <dd style="height:126px;"><span style="vertical-align:85px">
+        描&nbsp;&nbsp;述:   
+        </span> <textarea name="ps"></textarea>
+      </dd> 
+      <dd style="display:block;" class="ps">还可以输入<strong class="num">200</strong>字</dd> 
+      <dd style="display:none;" class="ps">已超过<strong class="num"></strong>字，<span class="clear">清尾</span></dd>
+      <dd style="padding:0 0 20px 80px;">
+        <input type="button" name="sub" class="submit" value="确认修改" />
+      </dd>
+    </dl>
+    </form>      	 
+	</div>
+</div>
+
+<div id="screen"></div>
+
+<div id="test" style="clear:both;"></div>
+<div id="footer">
+    <a href="" target="_blank">相关内容</a>|                      
+        <span>联系方式 1412822051</span>           
+         <p>Copyright &copy; Lulangping</p>
+</div>
+
+</body>
+</html>
